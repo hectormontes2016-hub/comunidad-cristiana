@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Una plataforma cristiana para compartir el evangelio, organizar eventos y fortalecer la comunidad." />
+  <meta name="keywords" content="evangelio, iglesia, comunidad cristiana, sermones, eventos" />
+  <meta name="author" content="Tu Nombre" />
+  <title>Lugar para Bendecir tu Vida</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Lugar para bendecir tu vida</h1>
+    <p>Un sitio de refrigerio espiritual</p>
+    <nav>
+      <ul>
+        <li><a href="#about">Acerca de</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#gallery">Galería</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="carousel" class="carousel">
+    <div class="slide active"><img src="img/img1.jpg" alt="Bienvenida" /></div>
+    <div class="slide"><img src="img/img2.jpg" alt="Evento especial" /></div>
+    <div class="slide"><img src="img/img3.jpg" alt="Estudio bíblico" /></div>
+    <div class="carousel-controls">
+      <button id="prev">‹</button>
+      <button id="next">›</button>
+    </div>
+    <div class="cta-buttons">
+      <a href="#gallery" class="btn">Ver Portafolio</a>
+      <a href="#contact" class="btn">Contáctame</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>Acerca de Nosotros</h2>
+    <p>Somos una comunidad cristiana dedicada a compartir el mensaje de fe, esperanza y amor. Nuestra misión es guiar, enseñar y servir con humildad y propósito.</p>
+    <img src="img/perfil.jpg" alt="Foto del líder" class="profile-pic" />
+  </section>
+
+  <section id="services">
+    <h2>Servicios</h2>
+    <ul>
+      <li>📸 Fotos de eventos</li>
+      <li>📖 Mensajes y citas bíblicas</li>
+      <li>🎙️ Predicas grabadas</li>
+      <li>📝 Reportes de asistencia</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Galería</h2>
+    <div class="filter-buttons">
+      <button onclick="filterGallery('all')">Todos</button>
+      <button onclick="filterGallery('eventos')">Eventos</button>
+      <button onclick="filterGallery('estudios')">Estudios</button>
+      <button onclick="filterGallery('servicios')">Servicios</button>
+    </div>
+    <div class="grid">
+      <div class="item eventos"><img src="img/evento1.jpg" alt="Evento 1" /></div>
+      <div class="item estudios"><img src="img/estudio1.jpg" alt="Estudio 1" /></div>
+      <div class="item servicios"><img src="img/servicio1.jpg" alt="Servicio 1" /></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contacto</h2>
+    <form action="send.php" method="POST">
+      <input type="text" name="name" placeholder="Tu nombre" required />
+      <input type="email" name="email" placeholder="Tu correo electrónico" required />
+      <textarea name="message" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <div class="social">
+      <p>📞 +58 000-0000000</p>
+      <a href="#">Facebook</a> | <a href="#">Instagram</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Comunidad Cristiana. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
